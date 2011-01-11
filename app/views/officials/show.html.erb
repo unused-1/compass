@@ -1,0 +1,19 @@
+<table class="profile" summary="Profile information"
+<tr>
+<td class="main">
+<img src="<%=@official.pic%>" width=120>
+<h1>
+<%= @official.fname%> <%= @official.lname%> 
+</h1>
+<strong>Partisanship</strong>:<br/><%= @official.partisanship%><br/>
+<strong>Location</strong>:<br/><%= @official.location%><br/>
+<strong>Short Biography</strong>:<br/><%= @official.sbio%><br/>
+<strong>Long Biography</strong>:<br/><%= @official.lbio%><br/>
+
+</td>
+<td class="sidebar round">
+<strong>Name</strong> <%=@official.name%> <br/>
+<strong>URL</strong> <%=link_to user_path(@official),@official%>
+</td>
+</tr>
+</table>

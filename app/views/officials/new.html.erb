@@ -1,0 +1,52 @@
+<h1>Enrollment of Officials</h1>
+
+<%= form_for(@official) do |f| %>
+<%=render 'shared/error_messages', :object=>f.object %>
+
+<div class="field">
+<%=f.label :fname, "First name"%><br/>
+<%=f.text_field :fname%>
+</div>
+
+<div class="field">
+<%=f.label :lname, "Last name"%><br/>
+<%=f.text_field :lname%>
+</div>
+
+<div class="field">
+<%=f.label :location%><br/>
+<%=f.text_field :location%>
+</div>
+
+<div class="field">
+<%=f.label :position%><br/>
+<%=f.text_field :position%>
+</div>
+
+
+<div class="field">
+<%=f.label :pic, "Picture URL"%><br/>
+<%=f.text_field :pic%>
+</div>
+
+<div class="field">
+<%=f.label :partisanship%><br/>
+<%=f.text_field :partisanship%>
+</div>
+
+<div class="field">
+<%=f.label :sbio, "Short Biography"%><br/>
+<%=f.text_field :sbio%>
+</div>
+
+<div class="field">
+<%=f.label :lbio, "Long Biography"%><br/>
+<%=f.text_field :lbio%>
+</div>
+
+<div class="action">
+<%=f.submit "Enroll" %>
+</div>
+
+<%end%>
+
